@@ -30,7 +30,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.potion.PotionEffectType;
 import org.mswsplex.anticheat.checks.Check;
 import org.mswsplex.anticheat.checks.Timing;
-import org.mswsplex.anticheat.msws.NOPE;
+import org.mswsplex.anticheat.NOPE;
 import org.mswsplex.anticheat.utils.MSG;
 //import org.mswsplex.punish.managers.BanManager;
 

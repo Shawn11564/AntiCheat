@@ -11,7 +11,7 @@ import org.bukkit.event.player.PlayerItemHeldEvent;
 import org.mswsplex.anticheat.checks.Check;
 import org.mswsplex.anticheat.checks.CheckType;
 import org.mswsplex.anticheat.data.CPlayer;
-import org.mswsplex.anticheat.msws.NOPE;
+import org.mswsplex.anticheat.NOPE;
 
 public class AutoSwitch1 implements Check, Listener {
 

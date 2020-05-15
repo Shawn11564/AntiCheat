@@ -2,7 +2,7 @@ package org.mswsplex.anticheat.checks;
 
 import javax.naming.OperationNotSupportedException;
 
-import org.mswsplex.anticheat.msws.NOPE;
+import org.mswsplex.anticheat.NOPE;
 
 public interface Check {
 	public CheckType getType();

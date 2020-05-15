@@ -1,4 +1,4 @@
-package org.mswsplex.anticheat.msws;
+package org.mswsplex.anticheat;
 
 import java.io.IOException;
 import java.io.InputStream;

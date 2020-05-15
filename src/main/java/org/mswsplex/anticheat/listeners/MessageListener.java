@@ -4,7 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.messaging.PluginMessageListener;
-import org.mswsplex.anticheat.msws.NOPE;
+import org.mswsplex.anticheat.NOPE;
 import org.mswsplex.anticheat.utils.MSG;
 
 import com.google.common.io.ByteArrayDataInput;

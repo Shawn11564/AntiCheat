@@ -14,7 +14,7 @@ import org.bukkit.event.inventory.InventoryType;
 import org.mswsplex.anticheat.checks.Check;
 import org.mswsplex.anticheat.checks.CheckType;
 import org.mswsplex.anticheat.data.CPlayer;
-import org.mswsplex.anticheat.msws.NOPE;
+import org.mswsplex.anticheat.NOPE;
 
 /**
  * Checks timings between clicks, does some really fancy logic to compare double

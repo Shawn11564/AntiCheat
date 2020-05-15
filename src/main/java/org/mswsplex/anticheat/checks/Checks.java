@@ -70,7 +70,7 @@ import org.mswsplex.anticheat.checks.world.IllegalBlockPlace1;
 import org.mswsplex.anticheat.checks.world.Scaffold1;
 import org.mswsplex.anticheat.checks.world.Scaffold2;
 import org.mswsplex.anticheat.checks.world.Scaffold3;
-import org.mswsplex.anticheat.msws.NOPE;
+import org.mswsplex.anticheat.NOPE;
 import org.mswsplex.anticheat.utils.MSG;
 
 import com.google.common.collect.Sets;

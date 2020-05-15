@@ -2,7 +2,7 @@ package org.mswsplex.anticheat.checks;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
-import org.mswsplex.anticheat.msws.NOPE;
+import org.mswsplex.anticheat.NOPE;
 
 public class TPSChecker {
 

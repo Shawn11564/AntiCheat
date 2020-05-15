@@ -8,7 +8,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.World;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.mswsplex.anticheat.msws.NOPE;
+import org.mswsplex.anticheat.NOPE;
 import org.mswsplex.anticheat.utils.Utils.Age;
 
 import com.google.common.collect.Iterables;

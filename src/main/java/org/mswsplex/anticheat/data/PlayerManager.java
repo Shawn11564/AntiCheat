@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.bukkit.OfflinePlayer;
-import org.mswsplex.anticheat.msws.NOPE;
+import org.mswsplex.anticheat.NOPE;
 
 public class PlayerManager {
 	private NOPE plugin;
