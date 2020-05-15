@@ -40,7 +40,7 @@ public class NOPE extends JavaPlugin {
 	public File configYml = new File(getDataFolder(), "config.yml"), dataYml = new File(getDataFolder(), "data.yml"),
 			langYml = new File(getDataFolder(), "lang.yml"), guiYml = new File(getDataFolder(), "guis.yml");
 
-	private PlayerManager pManager;
+	private PlayerManager playerManager;
 	private TPSChecker tpsChecker;
 	private Checks checks;
 	private Banwave banwave;
@@ -65,7 +65,7 @@ public class NOPE extends JavaPlugin {
 		gui = YamlConfiguration.loadConfiguration(guiYml);
 
 		MSG.plugin = this;
-		pManager = new PlayerManager(this);
+		playerManager = new PlayerManager(this);
 		tpsChecker = new TPSChecker(this);
 
 		banwave = new Banwave(this);
@@ -142,8 +142,8 @@ public class NOPE extends JavaPlugin {
 
 //		animation.stopAnimations(); // Stop all animations BEFORE player data is cleared and saved
 
-		for (OfflinePlayer p : pManager.getLoadedPlayers())
-			pManager.removePlayer(p); // Clear all loaded player data and save to files
+		for (OfflinePlayer p : playerManager.getLoadedPlayers())
+			playerManager.removePlayer(p); // Clear all loaded player data and save to files
 
 		/* Clean up entity related checks */
 
@@ -195,7 +195,7 @@ public class NOPE extends JavaPlugin {
 	}
 
 	public CPlayer getCPlayer(OfflinePlayer off) {
-		return pManager.getPlayer(off);
+		return playerManager.getPlayer(off);
 	}
 
 	public Banwave getBanwave() {
