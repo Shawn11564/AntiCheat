@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Callable;
 
+import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.World;
@@ -33,6 +34,7 @@ import org.mswsplex.anticheat.utils.MSG;
 import org.mswsplex.anticheat.utils.Metrics;
 import org.mswsplex.anticheat.utils.Metrics.CustomChart;
 
+@Getter
 public class NOPE extends JavaPlugin {
 	public FileConfiguration config, data, lang, gui;
 	public File configYml = new File(getDataFolder(), "config.yml"), dataYml = new File(getDataFolder(), "data.yml"),
@@ -135,26 +137,6 @@ public class NOPE extends JavaPlugin {
 		MSG.log("&aPlease report any bugs at the github. (https://github.com/MSWS/AntiCheat)");
 	}
 
-	public TPSChecker getTPSChecker() {
-		return tpsChecker;
-	}
-
-	public String getNewVersion() {
-		return newVersion;
-	}
-
-	public PluginInfo getPluginInfo() {
-		return pluginInfo;
-	}
-
-	public Stats getStats() {
-		return stats;
-	}
-
-	public float getTPS() {
-		return tpsChecker.getTPS();
-	}
-
 	public void onDisable() {
 		stats.saveData();
 
@@ -163,7 +145,7 @@ public class NOPE extends JavaPlugin {
 		for (OfflinePlayer p : pManager.getLoadedPlayers())
 			pManager.removePlayer(p); // Clear all loaded player data and save to files
 
-		/** Clean up entity related checks **/
+		/* Clean up entity related checks */
 
 		for (Player p : Bukkit.getOnlinePlayers())
 			p.removeMetadata("lastEntityHit", this);
@@ -202,10 +184,6 @@ public class NOPE extends JavaPlugin {
 
 	public Checks getChecks() {
 		return this.checks;
-	}
-
-	public PlayerManager getPlayerManager() {
-		return pManager;
 	}
 
 	public boolean devMode() {
