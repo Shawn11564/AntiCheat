@@ -10,66 +10,66 @@ import java.util.stream.Collectors;
 import javax.naming.OperationNotSupportedException;
 
 import org.bukkit.Bukkit;
-import org.mswsplex.anticheat.checks.combat.AntiKB1;
-import org.mswsplex.anticheat.checks.combat.AutoArmor1;
-import org.mswsplex.anticheat.checks.combat.AutoClicker1;
-import org.mswsplex.anticheat.checks.combat.FastBow1;
-import org.mswsplex.anticheat.checks.combat.HighCPS1;
-import org.mswsplex.anticheat.checks.combat.HighCPS2;
-import org.mswsplex.anticheat.checks.combat.HighCPS3;
-import org.mswsplex.anticheat.checks.combat.KillAura2;
-import org.mswsplex.anticheat.checks.combat.KillAura5;
-import org.mswsplex.anticheat.checks.combat.KillAura6;
-import org.mswsplex.anticheat.checks.combat.KillAura7;
-import org.mswsplex.anticheat.checks.movement.AntiAFK1;
-import org.mswsplex.anticheat.checks.movement.AntiRotate1;
-import org.mswsplex.anticheat.checks.movement.AutoWalk1;
-import org.mswsplex.anticheat.checks.movement.BHop1;
-import org.mswsplex.anticheat.checks.movement.ClonedMovement1;
-import org.mswsplex.anticheat.checks.movement.FastClimb1;
-import org.mswsplex.anticheat.checks.movement.FastSneak1;
-import org.mswsplex.anticheat.checks.movement.Flight1;
-import org.mswsplex.anticheat.checks.movement.Flight2;
-import org.mswsplex.anticheat.checks.movement.Flight3;
-import org.mswsplex.anticheat.checks.movement.Flight4;
-import org.mswsplex.anticheat.checks.movement.Flight5;
-import org.mswsplex.anticheat.checks.movement.Flight6;
-import org.mswsplex.anticheat.checks.movement.Glide1;
-import org.mswsplex.anticheat.checks.movement.InventoryMove1;
-import org.mswsplex.anticheat.checks.movement.Jesus1;
-import org.mswsplex.anticheat.checks.movement.NoSlowDown1;
-import org.mswsplex.anticheat.checks.movement.NoSlowDown2;
-import org.mswsplex.anticheat.checks.movement.NoSlowDown3;
-import org.mswsplex.anticheat.checks.movement.NoSlowDown4;
-import org.mswsplex.anticheat.checks.movement.NoSlowDown5;
-import org.mswsplex.anticheat.checks.movement.NoWeb1;
-import org.mswsplex.anticheat.checks.movement.Speed1;
-import org.mswsplex.anticheat.checks.movement.Speed2;
-import org.mswsplex.anticheat.checks.movement.Speed3;
-import org.mswsplex.anticheat.checks.movement.Spider1;
-import org.mswsplex.anticheat.checks.movement.Step1;
-import org.mswsplex.anticheat.checks.player.AntiFire1;
-import org.mswsplex.anticheat.checks.player.AutoSwitch1;
-import org.mswsplex.anticheat.checks.player.AutoTool1;
-import org.mswsplex.anticheat.checks.player.ChestStealer1;
-import org.mswsplex.anticheat.checks.player.FastEat1;
-import org.mswsplex.anticheat.checks.player.GhostHand2;
-import org.mswsplex.anticheat.checks.player.NoFall1;
-import org.mswsplex.anticheat.checks.player.SafeWalk1;
-import org.mswsplex.anticheat.checks.player.SelfHarm1;
-import org.mswsplex.anticheat.checks.player.Zoot1;
-import org.mswsplex.anticheat.checks.render.AutoSneak1;
-import org.mswsplex.anticheat.checks.render.InvalidMovement1;
-import org.mswsplex.anticheat.checks.render.SkinBlinker1;
-import org.mswsplex.anticheat.checks.render.Spinbot1;
-import org.mswsplex.anticheat.checks.tick.Timer1;
-import org.mswsplex.anticheat.checks.tick.Timer2;
-import org.mswsplex.anticheat.checks.world.FastBreak1;
-import org.mswsplex.anticheat.checks.world.IllegalBlockBreak1;
-import org.mswsplex.anticheat.checks.world.IllegalBlockPlace1;
-import org.mswsplex.anticheat.checks.world.Scaffold1;
-import org.mswsplex.anticheat.checks.world.Scaffold2;
-import org.mswsplex.anticheat.checks.world.Scaffold3;
+import org.mswsplex.anticheat.checks.combat.AntiKnockbackA;
+import org.mswsplex.anticheat.checks.combat.AutoArmorA;
+import org.mswsplex.anticheat.checks.combat.AutoClickerA;
+import org.mswsplex.anticheat.checks.combat.FastBowA;
+import org.mswsplex.anticheat.checks.combat.HighCPSA;
+import org.mswsplex.anticheat.checks.combat.HighCPSB;
+import org.mswsplex.anticheat.checks.combat.HighCPSC;
+import org.mswsplex.anticheat.checks.combat.KillAuraB;
+import org.mswsplex.anticheat.checks.combat.KillAuraE;
+import org.mswsplex.anticheat.checks.combat.KillAuraF;
+import org.mswsplex.anticheat.checks.combat.KillAuraG;
+import org.mswsplex.anticheat.checks.movement.AntiAFKA;
+import org.mswsplex.anticheat.checks.movement.AntiRotateA;
+import org.mswsplex.anticheat.checks.movement.AutoWalkA;
+import org.mswsplex.anticheat.checks.movement.BHopA;
+import org.mswsplex.anticheat.checks.movement.ClonedMovementA;
+import org.mswsplex.anticheat.checks.movement.FastClimbA;
+import org.mswsplex.anticheat.checks.movement.FastSneakA;
+import org.mswsplex.anticheat.checks.movement.FlightA;
+import org.mswsplex.anticheat.checks.movement.FlightB;
+import org.mswsplex.anticheat.checks.movement.FlightC;
+import org.mswsplex.anticheat.checks.movement.FlightD;
+import org.mswsplex.anticheat.checks.movement.FlightE;
+import org.mswsplex.anticheat.checks.movement.FlightF;
+import org.mswsplex.anticheat.checks.movement.GlideA;
+import org.mswsplex.anticheat.checks.movement.InventoryMoveA;
+import org.mswsplex.anticheat.checks.movement.JesusA;
+import org.mswsplex.anticheat.checks.movement.NoSlowDownA;
+import org.mswsplex.anticheat.checks.movement.NoSlowDownB;
+import org.mswsplex.anticheat.checks.movement.NoSlowDownC;
+import org.mswsplex.anticheat.checks.movement.NoSlowDownD;
+import org.mswsplex.anticheat.checks.movement.NoSlowDownE;
+import org.mswsplex.anticheat.checks.movement.NoWebA;
+import org.mswsplex.anticheat.checks.movement.SpeedA;
+import org.mswsplex.anticheat.checks.movement.SpeedB;
+import org.mswsplex.anticheat.checks.movement.SpeedC;
+import org.mswsplex.anticheat.checks.movement.SpiderA;
+import org.mswsplex.anticheat.checks.movement.StepA;
+import org.mswsplex.anticheat.checks.player.AntiFireA;
+import org.mswsplex.anticheat.checks.player.AutoSwitchA;
+import org.mswsplex.anticheat.checks.player.AutoToolA;
+import org.mswsplex.anticheat.checks.player.ChestStealerA;
+import org.mswsplex.anticheat.checks.player.FastEatA;
+import org.mswsplex.anticheat.checks.player.GhostHandB;
+import org.mswsplex.anticheat.checks.player.NoFallA;
+import org.mswsplex.anticheat.checks.player.SafeWalkA;
+import org.mswsplex.anticheat.checks.player.SelfHarmA;
+import org.mswsplex.anticheat.checks.player.ZootA;
+import org.mswsplex.anticheat.checks.render.AutoSneakA;
+import org.mswsplex.anticheat.checks.render.InvalidMovementA;
+import org.mswsplex.anticheat.checks.render.SkinBlinkerA;
+import org.mswsplex.anticheat.checks.render.SpinbotA;
+import org.mswsplex.anticheat.checks.tick.TimerA;
+import org.mswsplex.anticheat.checks.tick.TimerB;
+import org.mswsplex.anticheat.checks.world.FastBreakA;
+import org.mswsplex.anticheat.checks.world.IllegalBlockBreakA;
+import org.mswsplex.anticheat.checks.world.IllegalBlockPlaceB;
+import org.mswsplex.anticheat.checks.world.ScaffoldA;
+import org.mswsplex.anticheat.checks.world.ScaffoldB;
+import org.mswsplex.anticheat.checks.world.ScaffoldC;
 import org.mswsplex.anticheat.NOPE;
 import org.mswsplex.anticheat.utils.MSG;
 
@@ -86,20 +86,20 @@ public class Checks {
 		this.plugin = plugin;
 		activeChecks = new ArrayList<Check>();
 
-		checkList.addAll(Sets.newHashSet(new Flight1(), new Flight2(), new Flight3(), new Flight4(), new Flight5(),
-				new Flight6(), new Speed1(), new Speed2(), new Speed3(), new ClonedMovement1(), new Timer1(),
-				new Timer2(), new Step1(), new NoFall1(), new Scaffold1(), new Scaffold2(), new Scaffold3(),
-				new FastClimb1(), new Jesus1(), new FastBow1(), new FastSneak1(), new InvalidMovement1(),
-				new Spinbot1(), new IllegalBlockBreak1(), new IllegalBlockPlace1(), new NoWeb1(), new AutoWalk1(),
-				new AutoClicker1(), new HighCPS1(), new HighCPS2(), new HighCPS3(), new AntiAFK1(), new AutoSneak1(),
-				new InventoryMove1(), new KillAura2(), new KillAura6(), new AntiRotate1(), new NoSlowDown1(),
-				new NoSlowDown2(), new NoSlowDown3(), new NoSlowDown4(), new FastEat1(), new ChestStealer1(),
-				new AntiFire1(), new SelfHarm1(), new AntiKB1(), new Zoot1(), new AutoArmor1(), new SafeWalk1(),
-				new AutoTool1(), new AutoSwitch1(), new FastBreak1(), new Spider1(), new KillAura7(), new Glide1(),
-				new BHop1(), new GhostHand2()));
+		checkList.addAll(Sets.newHashSet(new FlightA(), new FlightB(), new FlightC(), new FlightD(), new FlightE(),
+				new FlightF(), new SpeedA(), new SpeedB(), new SpeedC(), new ClonedMovementA(), new TimerA(),
+				new TimerB(), new StepA(), new NoFallA(), new ScaffoldA(), new ScaffoldB(), new ScaffoldC(),
+				new FastClimbA(), new JesusA(), new FastBowA(), new FastSneakA(), new InvalidMovementA(),
+				new SpinbotA(), new IllegalBlockBreakA(), new IllegalBlockPlaceB(), new NoWebA(), new AutoWalkA(),
+				new AutoClickerA(), new HighCPSA(), new HighCPSB(), new HighCPSC(), new AntiAFKA(), new AutoSneakA(),
+				new InventoryMoveA(), new KillAuraB(), new KillAuraF(), new AntiRotateA(), new NoSlowDownA(),
+				new NoSlowDownB(), new NoSlowDownC(), new NoSlowDownD(), new FastEatA(), new ChestStealerA(),
+				new AntiFireA(), new SelfHarmA(), new AntiKnockbackA(), new ZootA(), new AutoArmorA(), new SafeWalkA(),
+				new AutoToolA(), new AutoSwitchA(), new FastBreakA(), new SpiderA(), new KillAuraG(), new GlideA(),
+				new BHopA(), new GhostHandB()));
 
 		if (Bukkit.getPluginManager().isPluginEnabled("ProtocolLib")) {
-			checkList.addAll(Sets.newHashSet(new NoSlowDown5(), new KillAura5(), new SkinBlinker1()));
+			checkList.addAll(Sets.newHashSet(new NoSlowDownE(), new KillAuraE(), new SkinBlinkerA()));
 		} else {
 			MSG.warn("ProtocolLib is not enabled, certain checks will not work.");
 		}
