@@ -72,7 +72,7 @@ public class KillAuraE implements Check, Listener {
 		if (diff == 0)
 			return;
 
-		if (plugin.getTPS() < 18)
+		if (plugin.getTPS().getTPS() < 18)
 			return;
 
 		cp.flagHack(this, (int) Math.round(diff * 5) + 20, "Invalid Packet Diff: &e" + diff);

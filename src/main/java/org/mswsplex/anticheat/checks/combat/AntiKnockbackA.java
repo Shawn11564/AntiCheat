@@ -11,11 +11,12 @@ import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.mswsplex.anticheat.checks.Check;
 import org.mswsplex.anticheat.checks.CheckType;
+import org.mswsplex.anticheat.checks.player.NoFallA;
 import org.mswsplex.anticheat.data.CPlayer;
 import org.mswsplex.anticheat.NOPE;
 
 /**
- * Basically {@link NoFall} but when the player hits an entity
+ * Basically {@link NoFallA} but when the player hits an entity
  * 
  * @author imodm
  *
@@ -60,7 +61,7 @@ public class AntiKnockbackA implements Check, Listener {
 
 		Location origin = player.getLocation();
 
-		if (plugin.getTPS() < 18)
+		if (plugin.getTPS().getTPS() < 18)
 			return;
 
 		new BukkitRunnable() {
@@ -71,7 +72,7 @@ public class AntiKnockbackA implements Check, Listener {
 				double dist = player.getLocation().distanceSquared(origin);
 				if (dist > 0)
 					return;
-				if (plugin.getTPS() < 15)
+				if (plugin.getTPS().getTPS() < 15)
 					return;
 				cp.flagHack(AntiKnockbackA.this, 10, "TPS: &e" + plugin.getTPS());
 			}

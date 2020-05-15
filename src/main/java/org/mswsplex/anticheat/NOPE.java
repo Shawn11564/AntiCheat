@@ -41,7 +41,7 @@ public class NOPE extends JavaPlugin {
 			langYml = new File(getDataFolder(), "lang.yml"), guiYml = new File(getDataFolder(), "guis.yml");
 
 	private PlayerManager playerManager;
-	private TPSChecker tpsChecker;
+	private TPSChecker TPS;
 	private Checks checks;
 	private Banwave banwave;
 	private Stats stats;
@@ -66,7 +66,7 @@ public class NOPE extends JavaPlugin {
 
 		MSG.plugin = this;
 		playerManager = new PlayerManager(this);
-		tpsChecker = new TPSChecker(this);
+		TPS = new TPSChecker(this);
 
 		banwave = new Banwave(this);
 
