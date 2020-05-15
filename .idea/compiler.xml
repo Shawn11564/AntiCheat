@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="NOPE" target="1.9" />
+      <module name="NOPE" target="1.8" />
       <module name="NOPE (1)" target="1.9" />
       <module name="NOPE (2)" target="1.5" />
     </bytecodeTargetLevel>
