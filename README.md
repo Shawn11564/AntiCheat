@@ -3,7 +3,7 @@
 
 [logo]: https://i.imgur.com/NZRVx3I.png
 
-### NOPE is a Minecraft anticheat that blocks the large majority of hacks on any client.​
+### NOPE is a Minecraft org.mswsplex.anticheat that blocks the large majority of hacks on any client.​
 
 
 # Features

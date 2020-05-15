@@ -44,7 +44,7 @@
           <relocations>
             <relocation>
               <pattern>org.bstats</pattern>
-              <shadedPattern>xyz.msws.anticheat</shadedPattern>
+              <shadedPattern>xyz.msws.org.mswsplex.anticheat</shadedPattern>
             </relocation>
           </relocations>
         </configuration>
