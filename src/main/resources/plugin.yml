@@ -1,5 +1,5 @@
 name: NOPE
-main: org.mswsplex.anticheat.NOPE
+main: org.mswsplex.nope.NOPE
 version: 1.2.12
 description: 1.15.2 Minecraft Anticheat
 api-version: 1.15
