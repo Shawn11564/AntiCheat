@@ -74,6 +74,7 @@ public class NOPE extends JavaPlugin {
 
 		new SBoard(this);
 
+		// TODO: Remove metrics as this is only going to be on FallenRealms
 		Metrics metrics = new Metrics(this, 7422);
 		CustomChart chart = new Metrics.SingleLineChart("bans", new Callable<Integer>() {
 			@Override
@@ -97,6 +98,7 @@ public class NOPE extends JavaPlugin {
 			}
 		});
 
+		// TODO: Remove update checker as this is a fork of the original
 		if (config.getBoolean("UpdateChecker.Enabled", true)) {
 			if (config.getBoolean("UpdateChecker.InGame", true))
 				new UpdateCheckerListener(this);
