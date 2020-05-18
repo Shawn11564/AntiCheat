@@ -28,7 +28,7 @@ import java.util.concurrent.Callable;
 
 @Getter
 public class NOPE extends JavaPlugin {
-	public FileConfiguration config, data, lang, gui;
+	public FileConfiguration config, data, lang;
 	public File configYml = new File(getDataFolder(), "config.yml"), dataYml = new File(getDataFolder(), "data.yml"),
 			langYml = new File(getDataFolder(), "lang.yml"), guiYml = new File(getDataFolder(), "guis.yml");
 
@@ -49,12 +49,9 @@ public class NOPE extends JavaPlugin {
 			saveResource("config.yml", true);
 		if (!langYml.exists())
 			saveResource("lang.yml", true);
-		if (!guiYml.exists())
-			saveResource("guis.yml", true);
 		config = YamlConfiguration.loadConfiguration(configYml);
 		data = YamlConfiguration.loadConfiguration(dataYml);
 		lang = YamlConfiguration.loadConfiguration(langYml);
-		gui = YamlConfiguration.loadConfiguration(guiYml);
 
 		MSG.plugin = this;
 		playerManager = new PlayerManager(this);
